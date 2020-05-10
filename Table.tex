@@ -1,0 +1,834 @@
+\documentclass[12pt]{report}
+%\usepackage{multirow,tabularx,subfiles}
+\begin{document}
+\newcommand{\minitab}[2][l]{\begin{tabular}{#1}#2\end{tabular}}
+\begin{center}
+\begin{longtable}{|p{1.5cm}|p{3.2cm}|p{1.9cm}|p{1.65cm}|p{3cm}|p{3cm}|} 
+\hline\textbf{Family} & \textbf{Group} & \textbf{Member} & \textbf{Member Name} & \textbf{Transporter Type} &\textbf{Substrates}\\
+\hline 
+\endfirsthead
+
+\multicolumn{6}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \textbf{Family} & \textbf{Group} & \textbf{Member} & \textbf{Member Name} & \textbf{Transporter Type} &\textbf{Substrates}\\ \hline 
+\endhead
+
+\hline \multicolumn{6}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+%%%%%%%%%%%%%%%%%%%%%%%%%%  SLC1
+\multirow{7}{1.5cm}{\textbf{SLC1}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino\\acid transporter\\ \cite{kanai2013slc1,freidman2020amino}} & \href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC1A1&keywords=SLC1A1}{SLC1A1} &EAAT3 & Cotransporter \textcolor{blue}{SGLT1 \cite{grewer2014slc1,rebec2013dysregulation}} & L-glutamate L/D-aspartate\\
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC1A2&keywords=SLC1A2}{SLC1A2}&EAAT2&Cotransporter
+\textcolor{blue}{(SGLT1) \cite{fontana2015current,rebec2013dysregulation}} & L-glutamate L/D-aspartate
+\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC1A3&keywords=SLC1A3}{SLC1A3}&EAAT1 &Cotransporter  \textcolor{blue}{(SGLT1) \cite{grewer2014slc1,rebec2013dysregulation}} & L-glutamate L/D-aspartate
+\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC1A4&keywords=SLC1A4}{SLC1A4}&ASCT1 &Cotransporter \textcolor{blue}{(SGLT1) \cite{kaplan2018asct1}} & alanine, serine, cysteine, threonine\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC1A5&keywords=slc1a5}{SLC1A5}&ASCT2 &Cotransporter \textcolor{blue}{(SGLT1) \cite{scalise2018human}} & alanine, serine, cysteine, threonine, glutamine, asparagine\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC1A6&keywords=SLC1A6}{SLC1A6}&EAAT4 &Cotransporter \textcolor{blue}{(SGLT1) \cite{mim2005glutamate,rebec2013dysregulation}} & L-glutamate L/D-aspartate\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC1A7&keywords=slc1a7}{SLC1A7}&EAAT5 &Cotransporter \textcolor{blue}{(SGLT1) \cite{arriza1997excitatory,rebec2013dysregulation}} & L-glutamate L/D-aspartate\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%  SLC2
+\multirow{14}{1.5cm}{\textbf{SLC2}} & \multirow{14}{4cm}{Facilitative\\GLUT\\transporter\\family\\
+\cite{mueckler2013slc2,robichaud2008glut1,marland2002transporters,alonso2007silico}} & SLC2A1 & GLUT1 & Facilitated \textcolor{blue}{GLUT1 \cite{gould1997facilitative, robichaud2008glut1,lowe1986kinetics}} & glucose, galactose, mannose, glucosamine\\ 
+\cline{3-6}
+&&SLC2A2& GLUT2 & Facilitated \textcolor{blue}{GLUT1 \cite{colville1993kinetic}} & glucose, galactose, mannose, glucosamine\\ 
+\cline{3-6}
+&&SLC2A3& GLUT3 & Facilitated \textcolor{blue}{GLUT1 \cite{colville1993kinetic}} &  glucose, galactose, mannose, xylose\\ 
+\cline{3-6}
+&&SLC2A4& GLUT4 & Facilitated \textcolor{blue}{GLUT1 \cite{stockli2010muscling,vargas2019physiology,huang2007glut4}} & glucose, glucosamine (Insulin regulated)\\ 
+\cline{3-6}
+&&SLC2A5& GLUT5 & Facilitated \textcolor{blue}{GLUT1 \cite{nomura2015structure,wright20121583}} & fructose\\ 
+\cline{3-6}
+&&SLC2A6& GLUT6 & Facilitated \textcolor{blue}{GLUT1 \cite{mizuno2011ubiquitination,Byrne2018GLUT6}} & glucose\\ 
+\cline{3-6}
+&&SLC2A7& GLUT7 & Facilitated \textcolor{blue}{GLUT1 \cite{cheeseman2008glut7,li2004cloning}} & glucose, galactose, mannose, glucosamine\\
+\cline{3-6}
+&& SLC2A8 & GLUT8 & Facilitated \textcolor{blue}{GLUT1 \cite{doege2000glut8,debosch2014glucose,carayannopoulos2000glut8}} &  glucose, fructose, galactose (Insulin regulated)\\ 
+\cline{3-6}
+&&SLC2A9& GLUT9 & Facilitated \textcolor{blue}{GLUT1 \cite{kimura2014expression,ebert2017reassessment,bu2017hormonal,bi2018glut9}}& urate, fructose, glucose (at low rate). May have a role in urate reabsorption by proximal tubules\\
+\cline{3-6}
+&&SLC2A10& GLUT10 & Facilitated \textcolor{blue}{GLUT1 \cite{segade2010glucose,pezzulo2011glucose,gamberucci2017glut10,syu2018glut10}}& glucose, galactose\\ 
+\cline{3-6}
+&&SLC2A11& GLUT11 & Facilitated \textcolor{blue}{GLUT1 \cite{doege2001characterization,gaster2004glut11,scheepers2005characterization}}& glucose, fructose\\ 
+\cline{3-6}
+&&SLC2A12& GLUT12 & Facilitated \textcolor{blue}{GLUT1 \cite{waller2011glut,matsuzaka2012glut12,waller2013glut12}} & glucose\\ 
+\cline{3-6}
+&&SLC2A13& Proton myoinositol & Cotransporter&\\ 
+\cline{3-6}
+&&SLC2A14& GLUT14 & Facilitated \textcolor{blue}{GLUT1 \cite{wu2002glut14,amir2017slc2a14}}& glucose, dehydroascorbic acid\\ 
+\hline
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{4}{*}{\textbf{SLC3}} & \multirow{4}{4cm}{Heavy subunits heterodimeric aminoacid transporter\cite{fotiadis2013slc3,chillaron1996SLC3}} &\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC3A1&keywords=slc3a1}{SLC3A1} & rBAT & Exchanger \textcolor{blue}{(AE1)\cite{chillaron1996SLC3}}&\\
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC3A2&keywords=slc3a2}{SLC3A2} &4F2 & Exchanger \textcolor{blue}{(AE1)\cite{quackenbush19874f2}}&\\
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{10}{1.5cm}{\textbf{SLC4}} & \multirow{10}{4cm}{Bicarbonate cotransporter family \cite{romero2013slc4,liu2015functionSLC4, romero2004function,pushkin2006mechanisms}} & \href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC4A1&keywords=SLC4A1}{SLC4A1} & AE1 & Exchanger \textcolor{blue}{(AE1) \cite{romero2013slc4, weinstein2000AE1, romero2004function,pushkin2006mechanisms}}&\\
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC4A2&keywords=SLC4A2}{SLC4A2}&AE2 & Exchanger \textcolor{blue}{(AE1) \cite{chernova2003function,zhang1996regulation,concepcion2014phregulation, romero2004function,pushkin2006mechanisms}}&\\
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC4A3&keywords=SLC4A3}{SLC4A3}&AE3 & Exchanger \textcolor{blue}{(AE1) \cite{romero2004function,pushkin2006mechanisms}}&\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC4A4&keywords=SLC4A4}{SLC4A4}&NBCe1 & Cotransporter (Electrogenic) \textcolor{blue}{(SGLT1) \cite{romero2004function,pushkin2006mechanisms, chang2008structure}}&\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC4A5&keywords=SLC4A5}{SLC4A5}&NBCe2 & Cotransporter (Electrogenic) \textcolor{blue}{\cite{romero2004function,pushkin2006mechanisms}}&\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC4A7&keywords=SLC4A7}{SLC4A7}&NBCn1 & Cotransporter (Electroneutral) \textcolor{blue}{(AE1) \cite{romero2004function,pushkin2006mechanisms}}&\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC4A8&keywords=SLC4A8}{SLC4A8}&NBCBE & Cotransporter (Electroneutral) \textcolor{blue}{(NHE3) \cite{romero2004function,pushkin2006mechanisms}}&\\
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC4A9&keywords=SLC4A9}{SLC4A9}&AE4 & Exchanger \textcolor{blue}{(Unknown)\cite{romero2004function,pushkin2006mechanisms}}&\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC4A10&keywords=SLC4A10}{SLC4A10}&NBCn2 & Cotransporter (Electroneutral) \textcolor{blue}{(Unknown)\cite{romero2004function,pushkin2006mechanisms}}&\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC4A11&keywords=SLC4A11}{SLC4A11}&BTR1 & Cotransporter (Electrogenic) \textcolor{blue}{(Unknown)\cite{romero2004function,pushkin2006mechanisms}}&\\ 
+\cline{3-6}
+\hline
+
+\multirow{12}{1.5cm}{\textbf{SLC5}} & \multirow{12}{4cm}{Na+/glucose cotransporter\\ family} & \href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC5A1&keywords=SLC5A1}{SLC5A1} & SGLT1 & Cotransporter (Electrogenic)&\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC5A2&keywords=SLC5A2}{SLC5A2}&SGLT2 & Cotransporter (Electrogenic)&\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC5A3&keywords=SLC5A3}{SLC5A3}&SMIT1 & Cotransporter&\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC5A4&keywords=SLC5A4}{SLC5A4}&SGLT3 & Cotransporter (Electrogenic)&\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC5A5&keywords=SLC5A5}{SLC5A5}&NIS & Cotransporter&\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC5A6&keywords=SLC5A6}{SLC5A6}&SMVT & Cotransporter&\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC5A7&keywords=SLC5A7}{SLC5A7}&CHT & Cotransporter&\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC5A8&keywords=SLC5A8}{SLC5A8}&SMCT1 & Cotransporter (Electrogenic)&\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC5A9&keywords=SLC5A9}{SLC5A9}&SGLT4 & Cotransporter (Electrogenic)&\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC5A10&keywords=SLC5A10}{SLC5A10}&SGLT5 & Cotransporter (Electrogenic)&\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC5A11&keywords=SLC5A11}{SLC5A11}&SMIT2 & Cotransporter (Electrogenic)&\\ 
+\cline{3-6}
+&&\href{https://www.genecards.org/cgi-bin/carddisp.pl?gene=SLC5A12&keywords=SLC5A12}{SLC5A12}&SMCT2 & Cotransporter (Electroneutral)&\\ 
+\hline
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{5}{1.5cm}{\textbf{SLC6}} & \multirow{5}{3cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5&\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC7}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5&\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC8}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC9}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC10}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC11}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC12}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC13}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC14}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC15}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC16}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC17}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC18}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC19}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC20}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC21}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC22}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC23}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC24}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC25}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC26}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC27}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC28}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC29}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC30}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC31}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC32}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC33}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC34}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC35}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC36}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC37}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC38}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC39}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC40}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC41}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC42}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC43}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC44}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC45}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC46}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC47}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC48}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC49}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC50}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC51}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\multirow{7}{1.5cm}{\textbf{SLC52}} & \multirow{7}{4cm}{High-affinity glutamate and neutral amino acid transporter} & SLCA1 & 4 & 5\\ 
+\cline{3-6}
+&&SLCA2&7 & 8&\\ 
+\cline{3-6}
+&&SLCA3&7 & 8&\\ 
+\cline{3-6}
+&&SLCA4&7 & 8&\\ 
+\cline{3-6}
+&&SLCA5&7 & 8&\\ 
+\cline{3-6}
+&&SLCA6&7 & 8&\\ 
+\cline{3-6}
+&&SLCA7&7 & 8&\\ 
+\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{longtable}
+\end{center}
+
+
+\end{document}
